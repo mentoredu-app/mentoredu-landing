@@ -1,4 +1,4 @@
-// =========================
+﻿// =========================
 // FAQ
 // =========================
 document.addEventListener("DOMContentLoaded", () => {
@@ -60,22 +60,22 @@ document.addEventListener("click", (e) => {
 // =========================
 const testimonios = [
   {
-    texto: '”Antes de MentorEdu, compartir mis materiales con los estudiantes era complicado. Ahora subo un PDF y llega a quienes realmente lo necesitan. Ver cómo resuelven mis ejercicios y poder darles retroalimentación real es lo que más valoro.”',
-    nombre: “Carlos Mendoza”,
-    iniciales: “CM”,
-    color: “#0070E0”
+    texto: '"Antes de MentorEdu, compartir mis materiales con los estudiantes era complicado. Ahora subo un PDF y llega a quienes realmente lo necesitan. Ver cómo resuelven mis ejercicios y poder darles retroalimentación real es lo que más valoro."',
+    nombre: "Carlos Mendoza",
+    iniciales: "CM",
+    color: "#0070E0"
   },
   {
-    texto: '”El ciclo de ejercicio, resolución y feedback es lo que diferencia a MentorEdu. No es solo compartir archivos, es un proceso de aprendizaje activo que beneficia tanto al estudiante como al docente.”',
-    nombre: “José Ramírez”,
-    iniciales: “JR”,
-    color: “#7C3AED”
+    texto: '"El ciclo de ejercicio, resolución y feedback es lo que diferencia a MentorEdu. No es solo compartir archivos, es un proceso de aprendizaje activo que beneficia tanto al estudiante como al docente."',
+    nombre: "José Ramírez",
+    iniciales: "JR",
+    color: "#7C3AED"
   },
   {
-    texto: '”La verificación oficial le da seriedad a la plataforma. Los estudiantes saben que están recibiendo material de docentes reales. Eso genera confianza y los motiva a participar más.”',
-    nombre: “Luis Herrera”,
-    iniciales: “LH”,
-    color: “#0891B2”
+    texto: '"La verificación oficial le da seriedad a la plataforma. Los estudiantes saben que están recibiendo material de docentes reales. Eso genera confianza y los motiva a participar más."',
+    nombre: "Luis Herrera",
+    iniciales: "LH",
+    color: "#0891B2"
   }
 ];
 
