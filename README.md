@@ -8,6 +8,10 @@ Página de presentación estática de la plataforma MentorEdu. Desplegada autom�
 - GitHub Actions (CI/CD)
 - GitHub Pages (hosting)
 
+## Versión desplegada
+
+`v1.0.0` — [ver tag](https://github.com/mentoredu-app/mentoredu-landing/releases/tag/v1.0.0)
+
 ## Live
 
 https://mentoredu-app.github.io/mentoredu-landing/
