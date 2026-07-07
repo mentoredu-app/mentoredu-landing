@@ -387,11 +387,9 @@ a.btn-primary, a.btn-secondary, a.btn-outline {
   letter-spacing: -0.02em;
 }
 
-/* asymmetric grid — avoids 3-equal-column AI tell */
 .beneficios-grid {
   display: grid;
-  grid-template-columns: 1.55fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
   text-align: left;
 }
@@ -407,7 +405,7 @@ a.btn-primary, a.btn-secondary, a.btn-outline {
 }
 
 .card-featured {
-  grid-row: span 2;
+  grid-column: span 2;
   padding: 36px 32px;
   display: flex;
   flex-direction: column;
@@ -464,11 +462,20 @@ a.btn-primary, a.btn-secondary, a.btn-outline {
 
 @media (max-width: 1024px) {
   .beneficios-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
   }
   .card-featured {
-    grid-row: span 1;
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-featured {
+    grid-column: span 1;
   }
 }
 
@@ -610,6 +617,40 @@ a.btn-primary, a.btn-secondary, a.btn-outline {
   line-height: 1.7;
 }
 
+.product-showcase {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 32px;
+  margin: 56px 0 0;
+  text-align: left;
+}
+
+.product-showcase--reverse {
+  grid-template-columns: 1fr 1.15fr;
+}
+
+.product-showcase-copy h3 {
+  font-size: 26px;
+  line-height: 1.25;
+  margin: 12px 0 12px;
+  color: var(--color-text);
+}
+
+.product-showcase-copy p {
+  color: var(--color-text-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.product-showcase-image img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  display: block;
+}
+
 .section-divider {
   height: 60px;
 }
@@ -630,6 +671,14 @@ a.btn-primary, a.btn-secondary, a.btn-outline {
 
   .hands-buttons { justify-content: center; }
   .badge { min-width: 120px; }
+
+  .product-showcase,
+  .product-showcase--reverse {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+    margin-top: 44px;
+  }
 
   .features-box {
     width: 100%;
